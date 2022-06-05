@@ -1,0 +1,57 @@
+inp-box/* Modifica a imagem da esquerda e sua div */
+.img_fundo_esquerdo {
+    background-image: url(img-cad-login/peixe.tela.3.png);
+}
+
+/* Margin txt estado */
+.txt_direita {
+    margin-right: 25%;
+}
+
+#voltar {
+    margin-top: 210px;
+}
+
+/* Margin txt Municipio */
+#txt_municipio {
+    margin-right: 28%;
+}
+
+/* Margin dos input abaixo dos texto Estado e Municipio */
+.input_margin {
+    margin-left: 6%;
+}
+
+/* Input maior abaixo do texto Bairro */
+.input_maior {
+    width: 98%;
+}
+
+/* Input abaixo do texto Lagradouro */
+.input_medio_grande {
+    width: 60%;
+}
+
+.input_medio3 {
+    width: 44.5%;
+}
+
+/* Input abaixo do Numero */
+.input_menor {
+    width: 45%;
+}
+
+/* Margin do texto numero para alinhar ao seu input */
+#txt_numero {
+    margin-right: 31%;
+}
+
+#txt_estado {
+    float: right;
+    margin-right: 33%;
+}
+
+.btn-final {
+    width: 100%;
+    margin-top: 25px;
+}

@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;  
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-img{
+    background-image: url(img-home/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 657px;
+}
+
+/* Classes Gerais */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover{
+    border-bottom: 2px solid #C3321E;
+}
+
+p{
+    padding-top: 20px;
+    font-size: 19px;
+    line-height: 30px;
+}
+
+h1{
+    font-size: 36px;
+}
+
+.subtitulo{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+/* Header */
+
+.header{
+    padding-top: 8px;
+    width: 100%;
+    height: 80px;
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul li{
+    display: inline; /* para deixar itens da lista lado a lado */
+    font-size: 22px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 70px;
+}
+
+ul{
+    padding-top: 17px;
+}
+
+.box-logo{
+    display: flex;
+}
+
+#logo-img{
+    width: 579px;
+    padding-left: 131px;
+    padding-top: 112px;
+}
+
+#txt{
+    color: white;
+    font-family: 'Lora', serif;    
+    font-size: 55px;
+    padding-top: 137px;
+    padding-left: 4px;
+}
+
+#div-line{
+    margin-top: -106px;
+    margin-left: 721px;
+    border-radius: 3px;
+}
+
+.seta{
+    text-align: center;
+    padding-top: 198px;
+}
+
+#clique{
+    color: white;
+    font-size: 20px;
+}
+
+.seta-h:hover{
+    width: 50px;
+}
+
+/* Sobre nós  */
+
+.servicos{
+    width: 100px;
+    height: 750px;
+    color: #C3321E;
+    display: flex;
+}
+
+#bandeira-logo{
+    width: 150px;
+}
+
+.servicos ul li{
+    display: inline-block;
+    margin-top: -87px;;
+}
+
+#ul-sobre{
+    display: flex;
+}
+
+.servicos-txt{
+    width: 450px;
+    padding-left: 72px;
+}
+
+.container-sobre{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 71px;
+}
+
+.carpa-img{
+    margin-top: 266px;
+    width: 541px;
+    padding-left: 215px;
+}
+
+.servicos .container-sobre .servicos-txt p{
+    padding-top: 20px;
+    font-size: 19px;
+    line-height: 30px;
+}
+
+
+.servicos h1{
+    margin-top: 52px;
+}
+
+.seta a:hover{
+    font-size: 20px;
+    border-bottom: 0px;
+}
+
+.cont-tilapia{
+    display: flex;
+    color: #C3321E;
+}
+
+#tilapia-img{
+    width: 536px;
+    padding-top: 15px;
+}
+
+.container-des{
+    width: 600px;
+    margin-left: 100px;
+}
+
+#linha-sobre{
+    width: 100%;
+    color: #C3321E;
+    height: 10px;
+}
+
+.seta-sobre{
+    color: #C3321E;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: 0;
+}
+
+#sobre-txt{
+    color: #C3321E;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#seta-g:hover{
+    width: 50px;
+}
+
+#seta-imagem{
+    width: 100%;
+    height: 100px;
+}
+
+#seta-imagem .seta-sobre a:hover{
+    border-bottom: 0;
+}
+
+#container-mvv{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+#sobre-nos .container-sobre #bandeira-logo{
+    padding-left: 30px;     
+}
+
+.mvv{
+    width: 400px;
+    padding-top: 80px;
+    margin-left: 60px;
+}
+
+.logo-mvv{
+    width: 100px;
+    margin-bottom: 17px;
+}
+
+.democratizacao{
+    margin-top: 15px;
+}
+
+.seta-sobrenos{
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+    height: 20px;
+}
+
+.seta-sobrenos a:hover{
+    width: 15px;
+}
+
+.sub-mvv{
+    color: #C3321E;
+}
+
+#calculadora{
+    text-align: center;
+    text-transform: uppercase;
+    height: 70px;
+}
+
+#lucros{
+    font-size: 27px;
+    color: #C3321E;
+}
+
+.lucro-calc{
+    width: 280px;
+    height: 50px;
+    border-radius: 5px;
+    background: #C3321E;
+    color: #fff;
+    font-size: 15px;
+}
+
+#last-btn{
+    height: 50px;
+}
+
+.contato{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.container-ctt{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+}
+
+#contato-txt{
+    font-size: 30px;
+    font-weight: bold;
+    color: #C3321E;
+    margin-top: 90px;
+}
+
+#img-ctt{
+    width: 100%;
+}
+
+.inp-calc{
+    padding-top: 68px;
+    padding-left: 512px;
+    color: white;
+    font-size: 15px;
+}
+
+.inp-box{
+    width: 330px;
+    height: 30px;
+    margin-bottom: 11px;
+}
+
+.box-3{
+    height: 110px;
+}
+
+textarea{
+    resize: none;
+}
+
+.btn-inp{
+    margin-left: 116px;
+    width: 97px;
+    background: #C3321E;
+    color: white;
+    height: 21px;
+}
+
+.all-hover:hover{
+    width: 50px;
+}
+
+.btn-hover:hover{
+    height: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#calculadora .cal-hover:hover{
+    height: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.calcula-hover:hover{
+    height: 55px;
+    width: 290px;
+    cursor: pointer;
+}
+
+.bg-footer{
+    
+    padding-top: 20px;
+    width: 100%;
+    background-image: url(img-home/Footer/bg-footer-jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 234px; 
+    color: #fff;   
+}
+
+.container-ft{
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-ft{
+    margin-right: 30px;
+    width: 65px;
+}
+
+.container-ft p{
+    margin-bottom: 5px;
+}
+
+#redes-ft{
+    margin-bottom: 20px;
+}
+
+#rodape{
+    background: #C3321E;
+    height: 39px;
+    width: 100%;
+    text-align: center;
+    padding-top: 11px;
+}
+

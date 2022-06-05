@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/senha.css">
+    <script src="JS.js"></script>
+    <script src="funcoes.js"></script>
+    <title>Alterar Senha</title>
+</head>
+
+<body onload="verificar_conta()">
+    <div class="container">
+        <div class="esquerda">
+            <div class="menu">
+                <div class="borda">
+                    <div class="foto"></div>
+                </div>
+                
+                <div class="nome" id="n_user_conta"></div>
+                <div class="paginas">
+                    <ul>
+                        <li> <img src="CSS/imagens/casa.svg" alt=""> <a href="Conta.html"> Conta</a></li>
+                    </ul>
+                    <ul>
+                        <li> <img src="CSS/img-dash/Vector.png" alt=""><a href="dashboard.html"> Dashboard </a></li>
+                    </ul>
+                    <ul>
+                        <li> <img src="CSS/imagens/cadeado.svg" alt=""> <a id="senha_cor">Alterar Senha</a></li>
+                    </ul>
+                    <ul>
+                        <li onclick="logoff()"> <img src="CSS/imagens/sair.svg" alt=""> <a>Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="direita">
+
+            <div class="containerForm">
+
+                <h2>Alterar Senha</h2>
+
+                <div class="label1">
+                    <label for="senha">Nova Senha</label>
+                    <br>
+                    <input type="password" name="senha" id="senha">
+                </div>
+
+                <div class="label2">
+                    <label for="repetir">Repita a Nova Senha</label>
+                    <br>
+                    <input type="password" name="repetir" id="repetir">
+                </div>
+
+                <div class="botoes">
+                    <button onclick="cancelar()" class="btn-cancelar"><a href="Conta.html">CANCELAR</a></button>
+                    <button onclick="alterar_senha()" class="btn-novaSenha">DEFINA A NOVA SENHA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

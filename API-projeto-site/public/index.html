@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script data-jsd-embedded data-key="41355ee0-41cd-45da-b685-3203cf23ebd9"
+        data-base-url="https://jsd-widget.atlassian.com"
+        src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <script data-jsd-embedded data-key="422040f6-2a22-430c-8e1d-4e06fd24fd45"
+        data-base-url="https://jsd-widget.atlassian.com"
+        src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="icon" href="CSS/img-icon/logoverde.png">
+    <link rel="stylesheet" href="CSS/home-css.css">
+    <script src="funcoes.js"></script>
+    <title> Tank Solution </title>
+</head>
+
+<body onload="verificar_home()">
+    <!-- ADICIONAR LOGIN AO HEADER -->
+    <!-- HOME -->
+    <div class="bg-img">
+        <div class="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#id-servicos">serviços</a></li>
+                        <li><a href="#sobre-nos">sobre nós</a></li>
+                        <li><a href="#sec-ctt">contato</a></li>
+                        <li><a href="time.html">time</a></li>
+                        <span id="home_sem_login">
+                            <li><a href="login.html">login</a></li>
+                            <li><a href="cad1.html">cadastro</a></li>
+                        </span>
+                        <span id="home_com_login" style="display: none;">
+                            <li><a href="conta.html">Minha Conta</a></li>
+                            <li><a href="dashboard.html">Gráficos</a></li>
+                        </span>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="box-logo">
+            <img id="logo-img" src="CSS/img-home/logo.svg" alt="">
+            <span id="txt">Piscicultura a um <br><span id="click">clique de</span> distância </span>
+        </div>
+        <div id="div-line" style="background-color: #C3321E; width: 256px; height: 3px"></div>
+
+        <div class="seta">
+            <span id="clique">clique aqui</span><br>
+            <a href="#id-servicos"><img class="seta-h" src="CSS/img-home/seta-clique-aqui.svg" alt=""></a>
+        </div>
+    </div>
+
+    <!-- Nossos serviços -->
+    <section class="servicos" id="id-servicos">
+        <div class="container-sobre">
+            <ul id="ul-sobre">
+                <li> <img id="bandeira-logo" src="CSS/img-home/Sobre nós/bandeira-logo.svg" alt=""> </li>
+            </ul>
+
+            <div>
+                <div class="servicos-txt">
+                    <h1> Nossos Serviços</h1> <br>
+                    <span class="subtitulo">Inovação</span><br>
+                    <p>
+                        A Tank Solution é uma empresa jovem que vem revolucionando
+                        o mercado da piscicultura no Brasil por meio da tecnologia.
+                        Com as nossas inovações, um ramo que sempre foi braçal
+                        vem se tornando cada vez mais sofisticado e intuitivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img class="carpa-img" src="CSS/img-home/Sobre nós/carpas.svg" alt="">
+        </div>
+    </section>
+
+    <div class="cont-tilapia">
+        <div>
+            <img id="tilapia-img" src="CSS/img-home/Sobre nós/tilapia-jpg.jpg" alt="">
+        </div>
+
+        <div class="container-des">
+            <span class="subtitulo">Desenvolvimento</span><br>
+            <p>
+                Nós desenvolvemos uma aplicação capaz de identificar a temperatura da água do tanque e
+                enviar um alerta para o piscicultor caso a temperatura não esteja ideal para o cultivo
+                de peixes, para que dessa forma o piscicultor altere a temperatura da água, criando um
+                ambiente perfeito para o cultivo.
+            </p> <br><br>
+
+            <span class="subtitulo">Crescimento</span><br>
+            <p>
+                Nossa solução visa diminuir em 60% a perda de peixes por conta da oscilação de temperatura,
+                assim impactando não somente na quantidade de peixes perdidos, como também no faturamente
+                gerado pelos seus produtores.
+            </p>
+        </div>
+    </div> <br><br><br><br><br>
+
+    <div id="calculadora">
+        <span id="lucros"> Simule seus lucros </span><br>
+        <a href="cal.html"><button class="lucro-calc calcula-hover"> Calculadora</button></a>
+    </div> <br><br>
+
+    <div id="seta-imagem">
+        <div class="seta-sobre">
+            <span id="sobre-txt"> sobre nós</span><br>
+            <a href="#sobre-nos"><img id="seta-g" src="CSS/img-home/seta-laranja-clique-aqui.svg" alt=""></a>
+        </div>
+    </div>
+
+    <div style="background-color: #C3321E; height: 20px; width: 100%;"></div>
+
+    <!-- Sobre nós -->
+    <section id="sobre-nos">
+        <div class="container-sobre">
+            <div><img id="bandeira-logo" src="CSS/img-home/Sobre nós/bandeira-logo.svg" alt=""></div>
+        </div>
+
+        <div id="container-mvv">
+            <div class="mvv">
+                <img class="logo-mvv" src="CSS/img-home/Missao visao valores/facilidade.svg" alt=""> <br>
+                <span class="subtitulo sub-mvv">Facilidade</span><br>
+                <p>
+                    Nossa missão é transformar o complicado em simples, ou seja, desmistificar a piscicultura,
+                    englobando a ela tecnologia, para que sem burocracia, qualquer um consiga ter a acesso a esse
+                    tipo de informação e serviço.
+                </p>
+            </div>
+
+            <div class="mvv">
+                <img class="logo-mvv" src="CSS/img-home/Missao visao valores/presença.svg" alt=""> <br>
+                <span class="subtitulo sub-mvv">Presença</span><br>
+                <p>
+                    Para que você possa cuidar dos seus peixes de onde quiser, a Tank Solution está sempre perto de
+                    você,
+                    ao alcance de um clique. Desenvolvemos uma solução para que você tenha o controle da criação de
+                    peixes,
+                    no celular, no computador, ou em qualquer dispositivo que tenha em mãos.
+                </p>
+            </div>
+
+            <div class="mvv">
+                <img class="logo-mvv" src="CSS/img-home/Missao visao valores/democratização.svg" alt=""> <br>
+                <div class="democratizacao">
+                    <span class="subtitulo sub-mvv">Democratização</span><br>
+                    <p>
+                        Nosso objetivo é democratizar e disseminar a piscicultura ao redor do mundo,
+                        e assim impactar positivamente tanto na ecônomia quanto na alimentação de milhares de pessoas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="seta-sobrenos">
+            <a href="#sec-ctt"><img class="all-hover" src="CSS/img-home/seta-laranja-clique-aqui.svg" alt=""></a>
+        </div>
+
+    </section>
+
+    <!-- Contato -->
+    <section id="sec-ctt">
+        <div class="contato">
+            <div class="container-ctt">
+                <h3 id="contato-txt">Entre em contato</h3>
+                <p>Alguma pergunta ou sugestão? Fale com a gente!</p>
+
+
+            </div>
+            <div>
+                <img id="img-ctt" src="CSS/img-home/Contato/bg-contato.svg" alt="">
+            </div>
+        </div>
+        <!-- DEFINIR UMA ACÂO PRO FORMES -->
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <div class="inp-calc">Nome Completo <br>
+                <input name="name" class="inp-box" type="text" placeholder="Nome Completo"><br>
+                <input type="hidden" name="accessKey" value="89efc715-ea4e-4488-8a21-8c4f3de49246">
+                <input type="hidden" name="redirectTo" value="http://localhost:3000">
+
+                Email <br>
+                <input name="email" class="inp-box" type="email" placeholder="Endereço de email"><br>
+
+                Mensagem <br>
+                <textarea name="message" class="inp-box box-3" type="text"
+                    placeholder="Digite sua mensagem"></textarea><br>
+
+                <div id="last-btn">
+                    <button class="btn-inp btn-hover" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer">
+        <div class="container-ft">
+
+            <div>
+                <h3>Contato</h3>
+                <p>- 11 99999-9999 <br>
+                    - contato@tanksolution.com <br>
+                    - São Paulo - SP</p>
+            </div>
+
+            <div>
+                <h3 id="redes-ft">Redes Sociais</h3>
+                <a target="_blank" href="http://facebook.com"><img class="logo-ft"
+                        src="CSS/img-home/Footer/Redes sociais/facebook.svg" alt=""></a>
+                <a target="_blank" href="http://instagram.com"><img class="logo-ft"
+                        src="CSS/img-home/Footer/Redes sociais/instagram.svg" alt=""></a>
+                <a target="_blank" href="http://twitter.com"><img class="logo-ft"
+                        src="CSS/img-home/Footer/Redes sociais/twitter.svg" alt=""></a>
+            </div>
+        </div>
+        <div id="rodape">
+            <span id="ft-txt">Tank Solution 2021 © Todos os direitos reservados.</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+/* Modifica a imagem da esquerda e sua div */
+.img_fundo_esquerdo {
+    background-image: url(img-cad-login/peixe.tela1.png);
+    min-width: 458px;
+}
+
+/* Modifica a nav com os textos Login e Cadastro dentro */
+.login_cadastro {
+    font-size: 30px;
+    color: white;
+    padding-top: 30px;
+}
+
+/* Modifica o texto login, dando uma cor branca para o seu texto */
+#login_style {
+    color: white;
+}
+
+/* Deixa o texto Tank Solution com uma margem de cima */
+.tank_solution {
+    margin-top: 45%;
+}
+
+.tank_solution a{
+    color: white;
+}
+
+/* Textos e Inputs separados dos botões de cima e dos lados */
+.div_info2 {
+    width: 60%;
+}
+
+.style_icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    width: 70%;
+    margin: 15px auto;
+}
+
+/* Separa os textos Bem Vindo(a) dos botões de cima  */
+.div_alinhar_meio {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Deixa os botões de cima um ao lado do outro */
+.botao_alinhamento {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_linha_ou {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Inputs maiores */
+.input_style2 {
+    width: 98%;
+    height: 30px;
+}
+
+/* Style de todos os três botões de cima */
+.button_style {
+    min-width: 65px;
+    min-height: 60px;
+    background-color: #c4c4c4;
+    border: 0;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Da uma margem para o botão um, fazendo todos os botões de cima ficarem mais a direita */
+#botao_um {
+    /* margin-left: 8%; */
+    background-color: #267667;
+}
+
+/* Modifica as linhas que estão entre os botões de cima */
+.linha_entre_botao {
+    background-color: #c4c4c4;
+    height: 10px;
+    margin-top: 6%;
+    min-width: 27.5%;
+}
+ 
+/* Textos Bem Vindo alinhados com o fim do botão um, e tamanho da font maior */
+#span_ou {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Modifica a largura e margem do botão final: Proximo */
+.btn-final2 {
+    border-radius: 5px;
+    border: 0px;
+    height: 55px;
+    width: 100%;
+    background-color: #267667;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#anterior {
+    width: 30%;
+    margin-top: 25px;
+}

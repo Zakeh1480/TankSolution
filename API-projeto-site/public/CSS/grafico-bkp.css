@@ -1,0 +1,111 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: whitesmoke;
+}
+
+.graf_tilapia_box {
+    width: 60%;
+    border-radius: 10px;
+    background-color: white;
+    height: 350px;
+    float: right;
+    margin-right: 5%;
+    margin-left: 2%;
+    border-radius: 5px;
+}
+
+.graf_tilapia_box div {
+    border-radius: 5px;
+    margin: 5% auto;
+    width: 100%;
+    background-color: white;
+}
+.valores {
+    float: right;
+}
+
+.valores h3{
+    margin-top: 56px;
+    margin-right: 42px;}
+
+.corpo {
+    width: 92%;
+    height: 463px;
+    background-color: white;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+/* Inicio alteração footer */
+.bg-footer {
+    margin-top: 0;
+}
+/* Fim alternação foooter */
+
+
+
+/* Gráficos Isaque */
+.grafic_regiao{
+    border-radius: 5px;
+    margin: 5% auto;
+    width: 80%;
+    background-color: white;
+}
+
+
+.mercado_peixe{
+    border-radius: 5px;
+    margin: 5% auto;
+    width: 80%;
+    background-color: white;
+}
+
+.fundo_branco{
+    width: 60%;
+    border-radius: 10px;
+    background-color: white;
+    height: 350px;
+    float: right;
+    margin-right: 5%;
+    margin-left: 2%;
+    border-radius: 5px;
+}
+
+.container-charts{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 56px;
+    background: white;
+    padding: 20px;
+}
+
+section{
+    background-color: whitesmoke;
+    margin-top: 10%;
+}
+
+.size-chart{
+    width: 500px;
+    background-color: white;
+}
+
+#perda-chart{
+    width: 250px;
+    margin-right: 10%;
+}
+
+.container-charts .size-chart span{
+    margin-left: 34px;
+    font-size: 15px;
+    color: #50423c;
+}
+/*Fim*/

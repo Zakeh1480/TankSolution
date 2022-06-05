@@ -1,0 +1,188 @@
+
+/* Inicio Configurações do corpo */
+/* Define margin, padding e border como 0, cor para o fundo e padrao de font dos texto */
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    margin: 50px 50px;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: whitesmoke; */
+    background-image:url(img-cal/fundo.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+/* Deixando o main com uma cor de fundo, dando uma borda shadow para ele e setando um tamanho padrão para width */
+main {
+    width: 1035px;
+    height: 890px;
+    margin: 0 auto;
+    box-shadow: 1px 0px 10px 1px lightslategrey;
+    background-color: rgba(245, 245, 245, 0.541);
+}
+/* Fim configurações do corpo */
+
+/* Começo header */
+.heather {
+    width: 100%;
+    height: 100px;
+}
+
+#img_logo {
+    height: 140px;
+    margin-left: 50px;
+    background-color: #267667;
+}
+
+#txt_voltar {
+    float: right;
+    margin-right: 30px;
+    color: #267667;
+    font-size: 17px;
+    margin-top: 30px;
+    border-bottom: 1px solid #267667;
+}
+
+#txt_cadastro {
+    margin-right: 30px;
+    position: absolute  ;
+    color: #c3321e;
+    margin-top: 65px;
+    margin-left: 55.6%;
+    /* border-bottom: 2px solid #c3321e; */
+}
+
+#calculadora_titulo {
+    float: right;
+    background-color: #267667;
+    font-size: 45px;
+    padding-right: 170px;
+    color: white;
+    border-radius: 50px;
+    border-bottom-right-radius: 0; /* Tirando a circuferencia do lado inferior direito da borda */
+    border-top-right-radius: 0; /* Tirando a circuferencia do lado superior direito da borda */
+}
+
+#txt_calculadora {
+    margin-left: 40px;
+}
+/* Fim header */
+
+/* inicio da calculadora */
+#box_cal {
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+#vidro{
+    width: 550px;
+    background-image: url(img-cal/fundo-cal.svg);
+    background-repeat: no-repeat;
+    height: 650px;
+    border-radius: 30px;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+
+#div_text_opacidade {
+    width: 420px;
+    margin-left: 65px;
+    margin-top: 40px;
+    border-radius: 20px;
+    height: 570px;
+    background-color: rgba(186, 102, 102, 0.25);
+    color: white;
+}
+
+#btn_cal {
+    height: 35px;
+    border: 0;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+/* Fim calculadora */
+
+/* Inicio resposta */ 
+.box_res {
+    width: 385px;
+    background-color: rgb(72, 75, 77);
+    height: 645px;
+    margin-top: 37px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+.div_txt_meio {
+    margin-left: 35px;
+    width: 325px;
+    padding-top: 35px;
+    height: 45px;
+    text-shadow: 0 0 5px black;
+}
+
+.meio_txt {
+    margin-top: 15px;
+}
+
+.margin_cima {
+    margin-bottom: 10px;
+}
+
+.div_meio_2 {
+    height: 595px;
+    width: 340px;
+    border: 2px solid white;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+#margin-cal {
+    margin-left: 20px;
+}
+
+/* Inicio do footer */
+#footer {
+    text-align: center;
+    height: 40px;
+    width: 1035px;
+    margin: 0 auto;
+    background-color: rgb(72, 75, 77);
+    box-shadow: 1px 3px 5px 3px lightslategrey;
+    color: white;
+    padding-top: 10px;
+}
+/* Fim do footer */
+
+/* Inicio Estilização Botões e inputs*/
+.input_style {
+    width: 250px;
+    border: 2px solid #484b4d;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.btn {
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    margin-right: 20px;
+    background-color: #267667;
+    color: white;
+    margin-top: 35px;
+    cursor: pointer;
+    float: right;
+}
+#btn_cal {
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color:#C3321E    ;
+    color: white;
+    margin-top: 35px;
+    cursor: pointer;
+}
+/* Fim estilização botões e inputs*/

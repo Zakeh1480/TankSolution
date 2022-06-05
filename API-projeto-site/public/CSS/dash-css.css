@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    /* overflow-x: hidden; */
+    font-family: 'Poppins', sans-serif;
+    background-color: gray;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #fffbface;
+}
+
+div header{
+    padding: 10px;
+}
+
+.container .div-text p{
+    margin-left: 400px;
+    padding-top: 13px;
+    float: right;
+    font-size: 17px;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo{
+    width: 150px;
+    margin-top: 1px;
+}
+
+.navegacao{
+    float: right;
+    margin-left: 20px;
+}
+
+.navegacao div{
+    float: left;
+}
+/* Fim Header */
+
+/* Começo hamburguer */
+#chats-img{
+    width: 20px;
+}
+
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.scrolar-total{
+    position: fixed;
+    z-index: 10;
+}
+
+header{
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.barra{
+    background-color: #333;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+    position: fixed;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.link{
+    background-color: #494950;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: #f4f4f9;
+    border-bottom: 4px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+    /* display: flex; */
+}
+
+.link:hover{
+    background-color: #ffffff;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(300px)
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+/* Fim hamburguer */
+
+/* Inicio footer */
+.footer {
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    padding-top: 22px;
+}
+
+.footer_box {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+/* Fim footer */
+

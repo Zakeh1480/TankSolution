@@ -1,0 +1,127 @@
+body {
+padding: 0;
+margin: 0;
+border: 0;
+max-width: 1954px;
+height: 100%;
+max-width: 100%;
+border-radius: 0px;
+}
+
+h3 {
+margin: 0;
+text-align: center;
+font-family: Lora;
+font-size: 70px;
+font-style: normal;
+font-weight: 700;
+line-height: 154px;
+letter-spacing: -0.035em;
+}
+
+span {
+font-family: Poppins;
+font-size: 30px;
+color: white;
+font-style: normal;
+font-weight: 300;
+line-height: 60px;
+letter-spacing: -0.035em;
+text-align: left;
+padding: 20px;
+}
+
+.peixesDireita {
+    float: right;
+    width: 400px;
+    left: 0px;
+    top: 0px;
+}
+
+.peixesEsquerda {
+    float: left;
+    margin-top: 50px;
+    width: 400px;
+    left: 0px;
+    top: 0px;
+}
+.container-esquerdo {
+    height: 400px;
+    width: 60%;
+    background: #C3321E;
+    display: inline-flex;
+}
+
+.container-direito {
+    float: right;
+    height: 400px;
+    width: 60%;
+    background: #C3321E;
+    display: inline-flex;
+}
+
+.pessoaEsquerda {
+float: left;
+height: 400px;
+width: 400px;
+left: 0px;
+border-radius: 0px;
+}
+
+.pessoaDireita {
+float: right;
+height: 400px;
+position: absolute;
+right: 0px;
+margin-block: 7px;
+}
+
+#carlinhos {
+    height: 375px;
+    width: 367px;
+    margin-block: 13px;
+}
+
+.peixes {
+    margin-top: 20px;
+}
+
+#peixe3 {
+    margin-top: 52px;
+}
+
+#danilo {
+    margin-block: 17px;
+}
+
+#peixe4 {
+    margin-top: 20px;
+}
+
+#fernanda {
+    height: 375px;
+    width: 367px;
+    margin-block: 13px;
+}
+
+#isaque {
+        margin-block: 17px;
+
+}
+
+#footer {
+    margin-top: 100px;
+    max-width: 100%;
+}
+
+#antonio {
+    height: 375px;
+    width: 367px;
+    margin-block: 13px;
+}
+
+#voltar {
+    float: left;
+    width: 50px;
+    margin: 20px
+}

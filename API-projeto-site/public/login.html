@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="CSS/img-icon/logoverde.png">
+    <link rel="stylesheet" href="CSS/login-css.css">
+    <title> Tela Login </title>
+</head>
+
+<body>
+    <main>
+        <div class="img_fundo_esquerdo">
+            <nav class="login_cadastro text_shadow">
+                <ul>
+                    <li class="cadastro"> Login </li>
+                    <a href="cad1.html">
+                        <li class="cadastro_style"> Cadastro </li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="tank_solution text_shadow"> <a href="index.html">Tank Solution</a> </div>
+            <a href="index.html"> <div class="text_shadow voltar_inicio"> Voltar Para Página Inicial </div> </a>
+        </div>
+
+        <div class="div_info">
+            <div class="div_alinhar_esquerda">
+                <span class="span_b_v"> Bem Vindo(a)! Entre com </span>
+                <br><br>
+                <!-- Imagens das Redes -->
+                <div class="style_icon">
+                    <a href=""> <img class="style_icon" id="img_in" src="CSS/img-cad-login/in.azul.verde.jpg" alt="">
+                    </a>
+                    <a href=""> <img class="style_icon" id="img_face" src="CSS/img-cad-login/face.azul.verde.png"
+                            alt=""></a>
+                    <a href=""> <img class="style_icon" src="CSS/img-cad-login/tele.azul.verde.png" alt=""> </a>
+                </div>
+                <br><br>
+
+                <!-- Começo do cadastro -->
+                <div class="div_linha_ou">
+                    <div class="linha_ou"> </div>
+                    <span class="span_ou"> OU </span>
+                    <div class="linha_ou"> </div>
+                    <br><br>
+                </div>
+
+                <div id="msg_erro" style="display: none;"> Seu nome de usuário ou senha podem estar incorretos </div>
+                <br>
+                <form id="form_login" method="POST" onsubmit="return entrar()">
+                <span class="txt_esquerda"> Email: </span>
+                <br>
+                <input name="email" id="inp_email" class="input_style" type="email" placeholder="Email">
+
+                <br><br>
+
+                <span class="txt_esquerda"> Senha: </span>
+                <br>
+                <input name="senha" id="inp_senha" class="input_style" type="password" required placeholder="Senha">
+
+                <br><br>
+                <a href=""> <u> Esqueceu a Senha </u> </a>
+            </div>
+
+            <br>
+
+            <!-- Proxima Pagina -->
+            <button class="btn-final" type="submit"> Entrar </button>
+        </form>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<script>
+    function entrar() {
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.email_usuario_meuapp = json.email;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    sessionStorage.id_usuario_meuapp = json.id_usuario;
+
+                    window.location.href = 'conta.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+</script>

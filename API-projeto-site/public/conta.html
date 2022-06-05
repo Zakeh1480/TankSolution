@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/senha.css">
+    <link rel="stylesheet" href="CSS/perfil.css">
+    <link rel="stylesheet" href="CSS/conta.css">
+    <script src="JS/JS.js"></script>
+    <script src="funcoes.js"></script>
+    <title>Conta</title>
+</head>
+
+<body onload="verificar_conta()">
+    <div class="container">
+        <div class="esquerda">
+            <div class="menu">
+                <div class="borda">
+                    <div class="foto"></div>
+                </div>
+
+                <div id="n_user_conta" class="nome"></div>
+                <div class="paginas">
+                    <ul>
+                        <li> <img src="CSS/imagens/casa.svg" alt=""> <a id="senha_cor" href="#"> Conta</a></li>
+                    </ul>
+                    <ul>
+                        <li> <img src="CSS/img-dash/Vector.png" alt=""><a href="dashboard.html"> Dashboard </a></li>
+                    </ul>
+                    <ul>
+                        <li> <img src="CSS/imagens/cadeado.svg" alt=""> <a href="Alterar-senha.html">Alterar Senha</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li onclick="logoff()"> <img src="CSS/imagens/sair.svg" alt=""> <a href="#">logoff</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="direita">
+
+            <form class="containerForm">
+                <h2 class="title">Visão geral da conta</h2>
+
+                <div class="label1">
+                    <br>
+                    <input type="text" name="user" id="inpt_user" class="ipt_info" disabled placeholder="Nome de usuário">
+                </div>
+
+                <div class="label2">
+                    <br>
+                    <input type="email" name="email" id="inpt_email" class="ipt_info" disabled placeholder="Email">
+                </div>
+
+                <div class="label1">
+                    <br>
+                    <input type="text" name="tel" id="inpt_tel" class="ipt_info" disabled placeholder="Telefone">
+                </div>
+
+                <div class="label2">
+                    <br>
+                    <input type="text" name="Regiao" id="inpt_regiao" class="ipt_info" disabled placeholder="Regiao(Estado)">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

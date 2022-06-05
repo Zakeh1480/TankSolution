@@ -1,0 +1,73 @@
+/* Modifica a imagem da esquerda e sua div */
+.img_fundo_esquerdo {
+    background-image: url(img-cad-login/peixe.tela2.2.png);
+    min-width: 458px;
+}
+
+.button_color {
+    background-color: #267667;
+}
+
+#img_profile {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/* Linha entre a imagem do usuario */
+.linha_profile {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    height: 2px;
+    margin-top: 40px;
+    width: 35%;
+} 
+
+/* Input do Data de Nascimento */
+.input_pequeno {
+    width: 40%;
+}
+
+/* Input do Telefone e Pessoa Juridica - Fisica */
+.input_medio {
+    width: 47%;
+}
+
+/* Deixa alguns textos a direita */
+.txt_direita {
+    float: right;
+    margin-right: 25%;
+}
+
+/* Escolha o tipo de Sexo */
+#form_escolha {
+    float: right;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+
+/* Deixa alguns inputs para a direita */
+.input_direita {
+    float: right;
+}
+
+/* Zera a margin de todos os botões da pagina */
+.btn-final {
+    margin-left: 0;
+
+}
+
+/* Deixa o botão proximo com uma margem do botão anterior */
+.btn-voltar{
+    float: left;
+    margin-top: 25px;
+}
+
+/*  */
+#prox {
+    float: right;
+    width: 30%;
+}
+
+#genero_m {
+    margin-left: 45px;
+}

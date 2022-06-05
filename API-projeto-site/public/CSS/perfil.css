@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#000000b7;
+}
+
+.direita form h2 {
+    margin: 30px 0 20px 40px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #C3321E;
+    margin-top: 1%;
+}
+
+.menu  {
+    border: 1px solid #C23D2B;
+    border-radius: 0 80px 80px 0;
+    background-color: #C23D2B;
+    width: 100%;
+    height: 99.7%;
+}
+
+.direita form{
+    width: 800px;
+    height: 98%;
+    border: 4px solid #F67449;
+    border-radius: 50px;
+    margin: auto;
+}
+
+#select_sexo{
+    margin: 15px 0 20px 40px;
+    font-size: 20px;
+    width: 650px;
+    height: 50px;
+    border: 1px solid #636464;
+    border-radius: 20px;
+    background: none;
+}
+
+#select_regiao{
+    margin: 15px 0 20px 40px;
+    font-size: 20px;
+    width: 650px;
+    height: 50px;
+    border: 1px solid #636464;
+    border-radius: 20px;
+    background: none;
+}
+
+#senha_cor{
+    color: white;
+}
+
+#senha_cor{
+    color: #0C0137;
+}
+
+.peixe1{
+    display: inline-block;
+    width: 696px;
+    height: 189px;
+    z-index: -10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50px;
+    position: relative;
+    margin-top: -30%;
+}

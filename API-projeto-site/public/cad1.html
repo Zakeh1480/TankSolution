@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="CSS/img-icon/logoverde.png">
+    <link rel="stylesheet" href="CSS/login-css.css">
+    <link rel="stylesheet" href="CSS/cad1-css.css">
+    <link rel="stylesheet" href="CSS/cad2-css.css">
+    <link rel="stylesheet" href="CSS/cad3-css.css">
+
+    <title> Tela Cadastro 1</title>
+</head>
+
+<body>
+    <!-- --------------------------------------------  Começo da Cad1 ------------------------------------------------ -->
+    <main>
+        <div class="img_fundo_esquerdo">
+            <nav class="login_cadastro text_shadow">
+                <ul>
+                    <a href="login.html"> <li id="login_style"> Login </li> </a>
+                    <li class="cadastro_style cadastro"> Cadastro </li>
+                </ul>
+            </nav>
+            <div class="tank_solution text_shadow"> <a href="index.html">Tank Solution </a> </div>
+            <a href="index.html">
+                <div class="text_shadow voltar_inicio">Voltar Para Página Inicial</div>
+            </a>
+        </div>
+
+        <div class="div_info2">
+            <form id="form_cadastro" onsubmit="return cadastrar()">
+
+                <div id="corpo">
+                    <!-- Botões de Inicio -->
+                    <div class="botao_alinhamento">
+                        <button class="button_style" id="botao_um"> 1 </button>
+
+                        <div id="linha1" class="linha_entre_botao"></div>
+
+                        <button class="button_style" id="botao_dois"> 2 </button>
+
+                        <div id="linha2" class="linha_entre_botao"></div>
+
+                        <button class="button_style" id="botao_tres"> 3 </button>
+                    </div>
+
+                    <div id="cad1" class="div_alinhar_meio">
+                        <span class="span_b_v"> Bem Vindo(a)! Comece com </span>
+                        <br><br>
+                        <!-- Imagens das Redes -->
+                        <div class="style_icon">
+                            <img id="img_in" src="CSS/img-cad-login/in.azul.verde.jpg" alt="">
+                            <img id="img_face" src="CSS/img-cad-login/face.azul.verde.png" alt="">
+                            <img src="CSS/img-cad-login/tele.azul.verde.png" alt="">
+                        </div>
+                        <br><br>
+
+                        <div class="div_linha_ou">
+                            <div class="linha_ou"> </div>
+                            <span id="span_ou"> OU </span>
+                            <div class="linha_ou"> </div>
+                        </div>
+                        <!-- ------------------------------------------ Começo do cadastro 1 -------------------------------------------------->
+                        <div>
+                            <div style="text-align: center;">
+                                <span id="mensagem_erro"></span>
+                            </div>
+                            <span class="txt_esquerda"> Email: </span>
+                            <br>
+                            <input id="email" class="input_style2" type="text" placeholder="Email" name="email"
+                                maxlength="50">
+
+                            <br><br>
+
+                            <span class="txt_esquerda"> Senha: </span>
+                            <br>
+                            <input id="senha" class="input_style2" required type="password" required placeholder="Senha"
+                                name="senha" maxlength="50">
+
+                            <br><br>
+                            <span> Confrimar Senha </span>
+                            <br>
+                            <input id="senha2" class="input_style2" required type="password"
+                                placeholder="Confirmar Senha" maxlength="50">
+                            <br><br>
+                            <button onclick="ircad2()" class="btn-final2" type="button"> Próximo </button>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------ Fim do cadastro 1 -------------------------------------------------->
+
+                    <!-- ------------------------------------------ Começo do cadastro 2 -------------------------------------------------->
+                    <div id="cad2" class="div_alinhar_meio" style="display: none;">
+                        <!-- Imagens das Redes -->
+                        <div class="div_linha_ou">
+                            <div class="linha_profile"> </div>
+                            <img id="img_profile" src="CSS/img-cad-login/profile-user 2.png" alt="">
+                            <div class="linha_profile"> </div>
+                        </div>
+
+                        <br><br>
+                        <div>
+                            <!-- Começo do cadastro -->
+                            <div style="text-align: center;">
+                                <span id="mensagem_erro2"></span>
+                            </div>
+                            <span class="txt_esquerda"> Nome: </span>
+                            <br>
+                            <input id="nome" class="input_style2" required type="text" placeholder="Nome Completo"
+                                name="nome" maxlength="70">
+
+                            <br><br>
+
+                            <span class="txt_esquerda"> CPF </span>
+                            <br>
+                            <input id="cpf" class="input_style2" required type="text" placeholder="Apenas Números"
+                                name="cpf" maxlength="11">
+
+                            <br><br>
+
+                            <span> Data de Nascimento: </span>
+                            <span class="txt_direita"> Sexo: </span>
+                            <br>
+                            <input id="data_nascimento" name="d_nasci" class="input_style2 input_pequeno" required
+                                type="date">
+
+
+                            <input id="genero_m" name="genero" value="masculino" type="radio">
+                            <span> Marculino </span>
+
+                            <input id="genero_f" name="genero" value="feminino" type="radio">
+                            <span> Feminino </span>
+
+                            <br><br>
+
+                            <span> Telefone </span>
+                            <span class="txt_direita"> Sou Pessoa: </span>
+
+                            <br>
+
+                            <input id="telefone" name="telefone" class="input_style input_medio" type="text"
+                                placeholder="Telefone" maxlength="15">
+
+                            <input id="juridico_fisico" name="juri_fisi" class="input_style input_medio input_direita"
+                                type="text" placeholder="Fisica/Juridica" maxlength="20">
+
+                            <button onclick="ircad3()" class="btn-final btn-cad2" id="prox" type="button"> Próximo
+                            </button>
+                            <button class="btn-final" id="anterior" type="button"> Anterior</button>
+                        </div>
+                    </div>
+                    <!-- Fim da tela de Cadastro 2 -->
+
+                    <!--   Começo da Tela de Cadastro 3  -->
+                    <div id="cad3" class="div_alinhar_meio" style="display: none;">
+                        <!-- Começo do cadastro -->
+
+                        <span class="txt_esquerda"> CEP: </span>
+                        <span id="txt_estado" class="txt_direita"> Estado </span>
+                        <br>
+                        <input id="cep" name="cep" id="cep" class="input_style input_medio3" type="text"
+                            placeholder="CEP (apenas numeros)" maxlength="20">
+                        <input id="estado" name="estado" class="input_style input_medio3 input_margin" type="text"
+                            placeholder="Exemplo: SP" maxlength="10">
+
+                        <br><br>
+
+                        <span class="txt_esquerda"> Cidade </span>
+                        <span class="txt_direita" id="txt_municipio"> Municipio </span>
+                        <br>
+                        <input id="cidade" name="cidade" class="input_style input_medio3" type="text"
+                            placeholder="Cidade" maxlength="50">
+                        <input id="municipio" name="municipio" class="input_style input_medio3 input_margin" type="text"
+                            placeholder="Municipio" maxlength="30">
+
+                        <br><br>
+
+                        <span> Bairro </span>
+                        <br>
+                        <input id="bairro" name="bairro" class="input_style input_maior" type="text"
+                            placeholder="Bairro" maxlength="30">
+
+                        <br><br>
+
+                        <span class="txt_esquerda"> Rua </span>
+                        <span class="txt_direita" id="txt_numero"> Número </span>
+                        <br>
+                        <input id="rua" name="rua" class="input_style input_medio3 input_medio_grande" required
+                            type="text" placeholder="Rua" maxlength="30">
+                        <input id="numero" name="numero" class="input_style input_medio3 input_direita input_menor"
+                            required type="text" placeholder="N°" maxlength="10">
+
+                        <br><br>
+
+                        <span> Complemento </span>
+                        <br>
+                        <input id="complemento" name="complemento" class="input_style input_maior" type="text" required
+                            placeholder="Complemento" maxlength="30">
+                        <button class="btn-final" type="submit"> Cadastrar </button>
+                    </div>
+                </div>
+        </div>
+        </form>
+        </div>
+    </main>
+
+    <!-- -------------------------------------------- Fim Tela de Cadastro ----------------------------------------------- -->
+
+</body>
+
+</html>
+
+<script>
+    function ircad2() {
+
+        if (email.value == '' || senha.value == '') {
+
+            mensagem_erro.innerHTML = `<span style="color: red;"> Preencha os campos vazios! <span>`;
+        }
+        else if (email.value.indexOf('@') < 0 || email.value.indexOf('.com') < 0) {
+
+            mensagem_erro.innerHTML = `<span style="color: red;"> E-mail inválido! <span>`;
+        }
+        else if (senha2.value != senha.value) {
+            mensagem_erro.innerHTML = `<span style="color: red;"> Senhas diferentes <span>`;
+        }
+        else {
+            cad1.style.display = 'none';
+            cad2.style.display = 'block';
+            cad3.style.display = 'none';
+
+            linha1.style = "background-color: #267667;";
+            botao_dois.style = "background-color: #267667;"
+        }
+    }
+
+    function ircad3() {
+
+        if (nome.value == '' || cpf.value == '' || data_nascimento.value == '' || genero_f.value == '' || genero_m.value == '' ||
+            telefone.value == '' || juridico_fisico.value == '') {
+
+            mensagem_erro2.innerHTML = `<span style="color: red;"> Preencha os campos vazios! <span>`;
+        }
+
+        else {
+            cad1.style.display = 'none';
+            cad2.style.display = 'none';
+            cad3.style.display = 'block';
+
+            linha2.style = "background-color: #267667;";
+            botao_tres.style = "background-color: #267667;"
+        }
+    }
+
+
+    function cadastrar() {
+        if (cep.value == '' || estado.value == '' || cidade.value == '' || municipio.value == '' || bairro.value == '' ||
+            rua.value == '' || numero.value == '' || complemento.value == '') {
+
+        } else {
+            var formulario = new URLSearchParams(new FormData(form_cadastro));
+            fetch("/usuarios/cadastrar", {
+                method: "POST",
+                body: formulario
+            }).then(function (response) {
+
+                if (response.ok) {
+
+                    window.location.href = 'login.html';
+
+                } else {
+
+                    console.log('Erro de cadastro!');
+                    response.text().then(function (resposta) {
+                        div_erro.innerHTML = resposta;
+                    });
+                }
+            });
+
+            return false;
+        }
+    }
+</script>

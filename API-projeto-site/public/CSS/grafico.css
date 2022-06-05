@@ -1,0 +1,124 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-image: url("../CSS/img-dash/photo-1474459321707-0f6fac57151c.jfif");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: gray;
+}
+
+#img_alerta{
+    width: 65px;
+}
+
+.graf_tilapia_box {
+    width: 60%;
+    border-radius: 10px;
+    height: 350px;
+    float: right;
+    margin-right: 5%;
+    margin-left: 2%;
+    border-radius: 5px;
+}
+
+.graf_tilapia_box div {
+    border-radius: 5px;
+    margin: 5% auto;
+    width: 100%;
+    background: linear-gradient( to right bottom,rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
+}
+.valores {
+    float: right;
+}
+
+.valores h3{
+    margin-top: 56px;
+    margin-right: 42px;}
+
+.corpo {
+    width: 100%;
+    height: 400px;
+    margin: 0px auto;
+    border-radius: 10px;
+    display: flex;
+}
+
+/* Inicio alteração footer */
+.bg-footer {
+    margin-top: 0;
+}
+/* Fim alternação foooter */
+
+
+/* Gráficos Isaque */
+.grafic_regiao{
+    border-radius: 5px;
+    margin: 5% auto;
+    width: 80%;
+
+}
+
+
+.mercado_peixe{
+    border-radius: 5px;
+    margin: 5% auto;
+    width: 80%;
+
+}
+
+.fundo_branco{
+    width: 60%;
+    border-radius: 10px;
+
+    height: 350px;
+    float: right;
+    margin-right: 5%;
+    margin-left: 2%;
+    border-radius: 5px;
+}
+
+.container-charts{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 0%;
+    background: linear-gradient( to right bottom,rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
+    border-radius: 30px;
+    box-shadow: 6px 6px 20px rgb(122 122 122 / 21%);
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+section{
+    margin-top: 10%;
+    max-width: 1100px;
+    margin-left: 10%;
+    background: rgba(234, 251, 255, 0.71) 0%;
+    box-shadow: inset 0px 4px 12px rgb(203 161 158 / 25%);
+    backdrop-filter: blur(42px);
+    border-radius: 40px;
+}
+
+.size-chart{
+    width: 500px;
+}
+
+#perda-chart{
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin-right: 10%;
+}
+
+.container-charts .size-chart span{
+    margin-left: 75px;
+    font-size: 15px;
+    color: #50423c;
+}
+/*Fim*/

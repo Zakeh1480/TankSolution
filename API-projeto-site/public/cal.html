@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="CSS/img-icon/logoverde.png">
+    <link rel="stylesheet" href="CSS/cal-css.css">
+    <title> Calculadora TankSolution </title>
+</head>
+
+<body>
+    <main>
+        <div class="heather">
+            <img id="img_logo" src="CSS/img-cal/Logo-tanksolution-cal.svg" alt="">
+            <a href="index.html#id-servicos"> <span id="txt_voltar"> Voltar a página anterior: </span> </a>
+            <a href="cad1.html"> <span id="txt_cadastro" class="txt_voltar"> Cadastre-se </span> </a>
+        </div>
+
+        <div id="calculadora_titulo">
+            <span id="txt_calculadora"> Calculadora </span>
+        </div>
+
+        <div id="box_cal">
+            <div id="vidro" class="container_vidro">
+                <div id="div_text_opacidade">
+                    <!-- Calculadora parte 1 -->
+                    <div class="div_txt_meio">
+                        <span> Quantidade de peixes produzidos mensalmente(u): </span>
+                        <br>
+                        <input id="inp_quant_peixe_m" class="input_style" type="text" placeholder="Apenas Números">
+                    </div>
+
+                    <div class="div_txt_meio meio_txt">
+                        <span> Quantidade de peixes perdidos mensalmente(u): </span>
+                        <br>
+                        <input id="inp_quant_peixe_perdido_m" class="input_style" text="" placeholder="Apenas Números">
+                    </div>
+
+                    <div class="div_txt_meio meio_txt">
+                        <span> Preço da unidade do peixe vendido: </span>
+                        <br>
+                        <input id="inp_preco_uni_peixe" class="input_style" type="text" placeholder="Apenas Números">
+                    </div>
+
+                    <div class="div_txt_meio ">
+                        <span> Em quantos tanques serão implantados o sistema: </span>
+                        <br>
+                        <input id="inp_tanques" class="input_style" type="text" placeholder="Apenas Números">
+                    </div>
+
+                    <div class="div_txt_meio meio_txt">
+                        <span> Qual a quantidade de água que há no total de todos os tanques (litros): </span>
+                        <br>
+                        <input id="inp_litros" class="input_style" text="" placeholder="Apenas Números">
+                    </div>
+                    <!-- Fim da calculadora parte 1 -->
+                    <!-- Fim da calculadora parte 2 -->
+                    <br>
+                    <button id="btn_cal" onclick="calcular()"> Calcular Orçamento </button>
+                </div>
+
+            </div>
+
+            <div class="box_res">
+                <div class="div_meio_2">
+                    <!-- calculadora parte 2 -->
+                    <div id="msg" style="margin-left: 20px;">
+                        <h3> Resultado: </h3>
+                        <div class="margin_cima"> Nossa solução tenta diminuir em até 60% das suas perdas </div>
+
+                        <div class="margin_cima"> Sua média de lucro mensal: <b id="bold_lucro_mensal"> ??? </b> </div>
+
+                        <div class="margin_cima"> Sua média de lucro mensal com a nossa solução: <b
+                                id="media_lucro_solu"> ??? </b> </div>
+
+                        <b class="margin_cima"> Valor da nossa solução:</b> R$ 3.000,00
+                        <div class="margin_cima" id="s_msg"></div>
+
+                        <div class="margin_cima"> Também calculamos a média de sensores por tanque: </div>
+
+                        <div class="margin_cima"> A média será: <b id="media_sensor"> ??? </b> sensor(es) por tanque
+                        </div>
+
+                        <div class="margin_cima"><u>Entre em contato clicando no botão abaixo! </u></div>
+
+                        <a href="index.html#sec-ctt"> <button class="btn">Entrar em contato </button> </a>
+
+                        <button class="btn" onclick="b_reset()">Fazer calculo novamente </button>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer id="footer">
+        <span>
+            Tank Solution 2021 © Todos os Direitos Reservados.
+        </span>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    function calcular() {
+
+        // variaveis de select
+
+        // Variaveis para calculo
+        var quant_peixe = Number(inp_quant_peixe_m.value);
+        var quant_peixe_perda = Number(inp_quant_peixe_perdido_m.value);
+        var preco_peixe = Number(inp_preco_uni_peixe.value);
+
+        var tanques = Number(inp_tanques.value);
+        var litros = Number(inp_litros.value);
+
+        // Calculo 1
+        var total_sem_solucao = quant_peixe - quant_peixe_perda;
+        var lucro_sem_solucao = total_sem_solucao * preco_peixe;
+
+        var diminuicao_de_perda = quant_peixe_perda / 100 * 60;
+        var total_com_solucao = quant_peixe + diminuicao_de_perda;
+        var lucro_com_solucao = total_com_solucao * preco_peixe;
+
+        // Calculo 2
+        var media = litros / tanques;
+        var sensores = media / 2500;
+        var custo_sol = 3000 / lucro_com_solucao;
+
+
+
+        // emitir mensagem (alerta) de erro caso não preencha algum campo
+
+        if (sensores <= 1) {
+            sensores = 1;
+        }
+
+        if (sensores > 0 && lucro_sem_solucao > 0 && lucro_com_solucao > 0) {
+
+            // if (lucro_com_solucao >= 3000) {
+            bold_lucro_mensal.innerHTML = `R$${lucro_sem_solucao.toFixed(2)}`;
+            media_lucro_solu.innerHTML = `R$${lucro_com_solucao.toFixed(2)}`;
+            s_msg.innerHTML = `você irá recuperar o dinheiro investido
+                em ${custo_sol.toFixed(1)} mes(es)`
+            media_sensor.innerHTML = `${sensores}`;
+
+        } else {
+            alert('Por favor, verifique se todos os campos foram preechidos ou se tem algum numero invalido')
+        }
+    }
+
+    function b_reset() {
+        bold_lucro_mensal.innerHTML = `???`;
+        
+        media_lucro_solu.innerHTML = `???`;
+        
+        s_msg.innerHTML = `???`
+        
+        media_sensor.innerHTML = `???`;
+    }
+</script>

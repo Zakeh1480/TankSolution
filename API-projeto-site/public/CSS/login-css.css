@@ -1,0 +1,148 @@
+/* Define margin, padding e border como 0, cor para o fundo e padrao de font dos texto */
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    margin: 50px 50px;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    background-image: url(img-cad-login/fundo.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+/* Deixando o main com uma cor de fundo, dando uma borda shadow para ele e setando um tamanho padrão para width */
+main {
+    display: flex;
+    width: 1075px;
+    margin: 0 auto;
+    box-shadow: 1px 5px 11px 0 lightslategrey;
+    background-color: whitesmoke;
+}
+
+/* Tirando a decoração dos links */
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.text_shadow {
+    text-shadow: 0 0 5px black;
+}
+
+.voltar_inicio {
+    color: white;
+    margin-top: 240px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/* Modifica a imagem e sua div */
+.img_fundo_esquerdo {
+    background-image: url(img-cad-login/isaque.png);
+    background-repeat: no-repeat;
+    min-width: 500px;    
+}
+
+/* Textos Login e Cadastro dentro da li alinhados */
+ul li {
+    display: inline;
+}
+
+/* Modifica os textos Login e Cadastro dentro da nav */
+.login_cadastro {
+    font-size: 30px;
+    color: white;
+    padding-top: 30px;
+}
+
+/* Modifica o texto cadastro, dando uma margem do texto login, e criando um borda em baixo */
+.cadastro {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.cadastro_style {
+    margin-left: 40px;
+    color: white;
+}
+
+/* Modifica o Texto da Tank Solution que fica no centro da imagem */
+.tank_solution {
+    margin-top: 43%;
+    width: 77%;
+    font-size: 45px;
+    margin-left: 15%;
+    color: white;
+    font-family: 'Lora', serif;
+}
+
+.tank_solution a{
+    color: white;
+}
+
+/* Textos Bem Vindo alinhados com o fim do botão um, e tamanho da font maior */
+.span_b_v {
+    font-size: 25px;
+    margin-left: 6.5%;
+}
+
+/* Textos e Inputs separados dos botões de cima e dos lados */
+.div_info {
+    margin-left: 3.8%;
+    width: 45%;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+#img_in {
+    margin-left: 4px;
+}
+
+/* Imagens separadas com o margin left e right na img face */
+#img_face {
+    margin-left: 22%;
+    margin-right: 20%;
+}
+
+.span_ou {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.div_linha_ou {
+    display: flex;
+}
+
+/* Linha entre o Texto OU, que fica abaixo dos icones das redes */
+.linha_ou {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    height: 2px;
+    margin-top: 10px;
+    min-width: 40%;
+}
+
+#msg_erro {
+    color: red;
+    font-size: 15.5px;
+}
+
+/* Modifica todos os inputs da tela */
+.input_style {
+    height: 30px;
+    width: 87.5%;
+}
+
+/* Modifica o botão final: Entrar */
+.btn-final {
+    border-radius: 5px;
+    border: 0px;
+    height: 55px;
+    width: 89.2%;
+    background-color: #267667;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
